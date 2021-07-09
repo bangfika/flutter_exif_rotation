@@ -143,10 +143,10 @@ public class FlutterExifRotationPlugin implements FlutterPlugin, MethodCallHandl
 
     public void rotateImage() {
 
-        if (!permissionManager.isPermissionGranted(Manifest.permission.READ_EXTERNAL_STORAGE) || !permissionManager.isPermissionGranted(Manifest.permission.WRITE_EXTERNAL_STORAGE)) {
-            permissionManager.askForPermission(new String[]{Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.WRITE_EXTERNAL_STORAGE}, REQUEST_EXTERNAL_IMAGE_STORAGE_PERMISSION);
-            return;
-        }
+        // if (!permissionManager.isPermissionGranted(Manifest.permission.READ_EXTERNAL_STORAGE) || !permissionManager.isPermissionGranted(Manifest.permission.WRITE_EXTERNAL_STORAGE)) {
+        //     permissionManager.askForPermission(new String[]{Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.WRITE_EXTERNAL_STORAGE}, REQUEST_EXTERNAL_IMAGE_STORAGE_PERMISSION);
+        //     return;
+        // }
         launchRotateImage();
 
     }
